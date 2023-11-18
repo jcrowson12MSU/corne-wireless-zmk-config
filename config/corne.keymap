@@ -13,14 +13,20 @@
         raiseAndPress: raiseAndPress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(R) &kp A &kp I &kp S &kp E &mo 2>;
+            bindings =
+                <&kp LS(R) &kp A &kp I &kp S &kp E &mo 2>,
+                <&macro_press>;
+
             label = "RAISEANDPRESS";
         };
 
         lowerAndPress: lowerAndPress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(L) &kp O &kp W &kp E &kp R &mo 1>;
+            bindings =
+                <&kp LS(L) &kp O &kp W &kp E &kp R &mo 1>,
+                <&macro_press>;
+
             label = "LOWERANDPRESS";
         };
     };
