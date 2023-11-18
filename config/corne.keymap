@@ -24,8 +24,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LS(L) &kp O &kp W &kp E &kp R &mo 1>,
-                <&macro_press>;
+                <&kp LS(L)>,
+                <&macro_press>,
+                <&mo 1>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 0>;
 
             label = "LOWERANDPRESS";
         };
