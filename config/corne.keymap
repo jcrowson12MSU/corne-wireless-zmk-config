@@ -13,7 +13,7 @@
         lowerAndPress: lowerAndPress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mo 1>, <&macro_release>, <&mo 0>;
+            bindings = <&macro_press>, <&mo 1>;
 
             label = "LOWERANDPRESS";
         };
@@ -33,7 +33,7 @@
 &kp A      &kp Q  &kp W  &kp E     &kp R           &kp T        &kp Y    &kp U           &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F           &kp G        &kp H    &kp J           &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V           &kp B        &kp N    &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &lowerAndPress  &kp SPACE    &kp RET  &raiseAndPress  &kp RALT
+                         &kp LGUI  &lowerAndPress  &kp SPACE    &kp RET  &lowerAndPress  &kp RALT
             >;
         };
 
