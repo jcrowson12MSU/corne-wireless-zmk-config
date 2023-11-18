@@ -13,14 +13,14 @@
         raiseAndPress: raiseAndPress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 2 &kp F23>;
+            bindings = <&mo 2 &kp L>;
             label = "RAISEANDPRESS";
         };
 
         lowerAndPress: lowerAndPress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 1 &kp F24>;
+            bindings = <&mo 1 &kp R>;
             label = "LOWERANDPRESS";
         };
     };
@@ -30,7 +30,7 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  A   |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
