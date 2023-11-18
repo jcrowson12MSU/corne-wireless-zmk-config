@@ -10,16 +10,6 @@
 
 / {
     macros {
-        raiseAndPress: raiseAndPress {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LS(R) &kp A &kp I &kp S &kp E &mo 2>,
-                <&macro_press>;
-
-            label = "RAISEANDPRESS";
-        };
-
         lowerAndPress: lowerAndPress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -27,7 +17,6 @@
                 <&kp LS(L)>,
                 <&macro_press>,
                 <&mo 1>,
-                <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 0>;
 
