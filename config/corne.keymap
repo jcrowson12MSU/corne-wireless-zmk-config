@@ -13,14 +13,14 @@
         raiseAndPress: raiseAndPress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 2 &kp L>;
+            bindings = <&kp L &mo 2>;
             label = "RAISEANDPRESS";
         };
 
         lowerAndPress: lowerAndPress {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 1 &kp R>;
+            bindings = <&kp R &mo 1>;
             label = "LOWERANDPRESS";
         };
     };
