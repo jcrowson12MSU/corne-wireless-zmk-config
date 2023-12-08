@@ -15,10 +15,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap &kp Z>,
-                <&macro_press &mo 1>,
-                <&macro_pause_for_release>,
-                <&macro_release &mo 0 &kp CARET>;
-
+                <&macro_press &mo 1>
 
             label = "LOWERANDPRESS";
         };
