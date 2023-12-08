@@ -1,4 +1,4 @@
-/*
+4/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -14,7 +14,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &mo 1 &kp DOLLAR>,
+                <&macro_tap &kp Z>,
+                <&macro_press &mo 1>,
                 <&macro_pause_for_release>,
                 <&macro_release &mo 0 &kp CARET>;
 
